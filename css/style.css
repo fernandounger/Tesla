@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #FFF;
+    border: 0;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000;
+    background: url('../img/wallpaperellon.svg') no-repeat 50% 50%;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+}
+body div.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 5px;
+}
+header{
+    padding: 40px 0;
+}
+header img{
+    width: 80px;
+}
+section .section__container{
+    max-width: 490px;
+}
+section .section__container .section__content{
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+}
+section .section__container .section__content h2{
+    font-weight: 400;
+    font-size: clamp(1.25rem, 0.7143rem + 2.381vw, 2.5rem);
+    line-height: 48px;
+    margin-bottom: 10px;
+}
+span{
+    font-family: 'Bungee Inline', cursive;
+}
+section .section__container .section__content p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: clamp(0.75rem, 0.6161rem + 0.5952vw, 1.0625rem);
+    line-height: 30px;
+}
+section .section__container .section__content button{
+    font-weight: 700;
+    font-size: clamp(0.875rem, 0.5rem + 1.6667vw, 1.75rem);
+    padding: 20px 30px;
+    background-color: #E82127;
+    cursor: pointer;
+    border-radius: 2px;
+}
+section .section__container .section__content .container__social a img {
+    width: 35px;
+}
+@media (max-width:800px){
+    body{
+        background-color: rgba(0, 0, 0, 0.5);
+        background-blend-mode: darken;
+    }
+    header, section{
+        padding: 10px;
+    }
+    section .section__container .section__content button{
+        width: 100%;
+    }
+    section .section__container .section__content .container__social{
+        display: flex;
+        gap: 2rem;
+    }
+}
