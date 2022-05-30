@@ -55,7 +55,7 @@ section .section__container .section__content button{
     border-radius: 2px;
 }
 section .section__container .section__content .container__social a img {
-    width: 35px;
+    width: 30px;
 }
 @media (max-width:800px){
     body{
